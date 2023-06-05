@@ -12,7 +12,7 @@ This project is a web scraper that extracts contract data from a specific websit
 
 1. Clone the repository to your local machine.
 ```Terminal
-    git clone https://github.com/your-username/idaho-contract-scraper.git
+    git clone https://github.com/abhiram1809/Idaho_Scraping
 ```
 
 2. Install the required dependencies using `pip`.
