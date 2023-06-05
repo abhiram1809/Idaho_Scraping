@@ -75,10 +75,10 @@ for quest_number in quest_number_list:
     back_to_search_element.click()
 
 # Create a DataFrame from the extracted data
-df_extracted = pd.DataFrame(data, columns=['Est. Value Notes', 'Description', 'Closing Date'])
-df_extracted['Quest Number'] = quest_number_list
-# Print the extracted DataFrame
-print(df_extracted)
+df_extracted = pd.DataFrame(quest_number_list, columns=['Quest Number'])
+df_extracted[['Est. Value Notes', 'Description', 'Closing Date']] = data
+df_extracted = df_extracted.head()
 df_extracted.to_csv('Extracted Columns.csv', index = False)
+
 # Close the browser
 driver.quit()
